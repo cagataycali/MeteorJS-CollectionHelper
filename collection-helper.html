@@ -1,0 +1,17 @@
+<head>
+  <title>collection-helper</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+    {{> books }}
+</body>
+
+<template name="books">
+    <ul>
+        {{#each books}}
+            <li>{{name}} by {{author.fullName}}</li>
+        {{/each}}
+    </ul>
+</template>
